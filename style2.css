@@ -1,0 +1,89 @@
+body {
+    background-color: black;
+    overflow-x: hidden;
+    font-family: "Source Code Pro", monospace;
+}
+
+#bg {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    max-width: 100%;
+    opacity: 0.20;
+    z-index: 1;
+}
+
+form {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 18px;
+    background-image: linear-gradient(to top, rgb(5, 8, 16), rgba(0,0,0,0));
+    border-radius: 20px;
+    background: rgba(44, 69, 76, 0.164);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.60);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 25px;
+}
+
+input,button {
+    background: none;
+    border: thin solid #fff;
+    outline: inherit;
+    width: 300px;
+    font-family: "Source Code Pro", monospace;
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+input:focus {
+    box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+button {
+    background-color: #fff;
+    color: black;
+    width: 330px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+button:hover {
+    color: #fff;
+    background: none;
+    border: thin solid #fff;
+    cursor: pointer;
+}
+
+table {
+    margin-top: 800px;
+    margin-left: 265px;
+    display: none;
+}
+
+th,td,table {
+    color: white;
+    z-index: 2;
+    border: white thin solid;
+    border-collapse: collapse;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+th,td {
+    text-align: center;
+    z-index: 2;
+}
+
+#number {
+    width: 50px;
+}

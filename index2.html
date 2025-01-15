@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="icon" type="image/x-icon" href="iete_logo.png">
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=DM+Serif+Display:ital@0;1&family=Jersey+20+Charted&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <video autoplay muted loop id="bg">
+            <source src="network_bg.mp4" type="video/mp4">
+        </video>
+    </div>
+    <form id="registrationform" autocomplete="off">
+        <h3 style="text-align: center;">Registration Form</h3><br>
+
+        <label for="id">ID:</label><br>
+        <input type="text" id="id" placeholder="ID" required><br><br>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" placeholder="Name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" placeholder="Email ID" required><br><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="text" id="contact" placeholder="Contact" required><br><br>
+
+        <button type="submit" id="submit" onclick="registerUser()">Register</button>
+    </form>
+    <table id="registeredTable">
+        <thead>
+            <tr>
+                <th id="number">Sr No</th>
+                <th width="150px">Name</th>
+                <th width="150px">ID</th>
+                <th width="150px">Email</th>
+                <th width="150px">Contact Number</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script src="script2.js"></script>
+</body>
+</html>

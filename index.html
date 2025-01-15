@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNTITLED</title>
+    <link rel="icon" type="image/x-icon" href="logoipsum-332.svg">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=DM+Serif+Display:ital@0;1&family=Jersey+20+Charted&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=DM+Serif+Display:ital@0;1&family=Jersey+20+Charted&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <video autoplay muted loop id="bg">
+            <source src="network_bg.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="navbar">
+        <div id="title-logo"><img src="logoipsum-332.svg" height="45px"></div>
+        <div id="links">
+            <div id="link"><a href="#main-container">HOME</div>
+            <div id="link"><a href="#about-container">ABOUT</a></div>
+            <div id="link"><a href="#contact-container">CONTACT US</a></div>
+        </div>
+    </div>
+    <div id="main-container">
+        <div id="heading" data-text="UNTITLED 2.0!">UNTITLED 2.0 !</div>
+        <div id="register-button"><button type="button" onclick="openRegistrationForm()">Register Now</button></div>
+    </div>
+    <div id="about-container">
+        <div class="bg"></div>
+        <div id="overview">
+            <div id="subtitle">Get Ready for the Second Season of UNTITLED!</div>
+            <div id="info-1">
+                We're back and better than ever! Join us for the second season of UNTITLED, where innovation meets creativity. Whether you're a seasoned hardware guru or a curious newcomer, join us for a day filled with exciting challenges, hands-on workshops led by industry experts, and the chance to collaborate with like-minded enthusiasts. Dive into the world of cutting-edge technology, showcase your skills, and compete for amazing prizes.
+            </div>
+        </div>
+        <div class="bulb-container">
+            <div class="wire"></div>
+            <div class="connector">
+              <div class="grove"></div>
+              <div class="grove"></div>
+              <div class="grove"></div>
+            </div>
+            <div class="bulb">
+              <div class="metal-wire"></div>
+              <div class="metal-wire"></div>
+              <div class="metal-wire"></div>
+            </div>
+        </div>
+        <div id="overview-2">
+            <div id="date">Event Details<span id="more"><br><ul>
+                <li>Date: 20th & 21st February 2025</li>
+                <li>Duration: 24 hours</li>
+                <li>Location: Anywhere St College of Education, Any city</li>
+                <li>Prize Pool: A whooping 1 Lakh rupees awaits the winners!</li>
+                <li>Registration Deadline: 2nd January 2025, 11:59 PM</li>
+            </ul></span></div>
+            <div id="readmore"><button type="submit" onclick="readMore()" id="rm">Know More</button></div>
+        </div>
+    </div>
+    <div id="contact-container">
+        <form autocomplete="off">
+            <label for="namein" id="fname">Name</label><br>
+            <input type="text" id="namein" placeholder="Name"><br><br>
+
+            <label for="mailin" id="mailid">Email</label><br>
+            <input type="text" id="mailin" placeholder="Email ID"><br><br>
+
+            <label for="messagein" id="message">Message</label><br>
+            <textarea id="messagein" style="width: 400px; height: 200px;" placeholder="Your Message"></textarea><br><br>
+
+            <input type="submit">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
